@@ -39,7 +39,7 @@ weatherForm.addEventListener('submit', (e) =>{
     fetch('/weather?address=' + searchVal).then((response) => {
         response.json().then((res) => {
             if(res.error){
-                console.log("Soemthing went wrong");
+                document.querySelector("#location").value = "Oops ! Something's wrong";
             }else{
 
                 const loc = document.querySelector("#loc");
