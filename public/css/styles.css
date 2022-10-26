@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+/* Hides */
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+.main{
+    min-height: 100vh;
+    background-image: url('../img/cloudy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row{
+    height: 100vh;
+}
+
+/* First section */
+.first{
+    position: relative;
+    padding-left: 10% !important;
+    padding-top: 5%;
+}
+.first h1{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    color: white;
+    
+}
+.first h1 div:nth-child(1){
+    font-weight: bold;
+    font-size: 6rem;
+    float: left;
+    padding-right: 3%;
+}
+.first h1 div:nth-child(2){
+    padding-top: 2%;
+    float: left;
+}
+.first img{
+    padding-left: 2%;
+    margin-top:2%;
+    width: 80px;
+    height: 60px;
+}
+
+.second{
+    /* Transparent Background Color code */
+    background: rgba(255, 255, 255, 0.2); 
+
+}
+.second h6{
+    font-weight: bold;
+}
+.second div:nth-child(1){
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+}
+button img{
+    border: none;
+   
+    outline: none;
+}
+.button{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 5%;
+}
+.button:hover{
+    cursor: pointer;
+}
+.button:focus{
+    outline: none;
+}
+.second form input{
+    margin-top: 10%;
+    width: 70%;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);   
+    border: none;
+   padding-left: 2%;
+    border-bottom: solid 2px white;
+    outline: none;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.details{
+    padding-top: 15%;
+}
+
+.details div{
+    float: left;
+    width: 50%;
+    padding-top: 5%;
+}
+.details div:nth-child(odd){
+    text-align: center;
+}
+.details div:nth-child(even){
+   
+}
+.suggestions{
+    padding-top: 80%;
+}
+.suggestions h6{
+    padding-top: 5%;
+}
+
+@media (max-width: 991px) {
+    .first{
+        display: none;
+    }
+
+    h3,h4{
+        text-align: center;
+    }
+    .second{
+        padding-left: 5% !important;
+    }
+    form{
+        text-align: center;
+    }
+    h4{
+        padding-top: 5%;
+    }
+}
