@@ -5,6 +5,8 @@ const { dirname } = require('path');
 const geocode = require('../src/utils/geocode.js');
 const forecast = require('../src/utils/forecast.js');
 const app = express();
+const port = process.env.PORT || 3000;
+
 
 const publicDirectoryPath = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname,'../templates/views');
@@ -52,6 +54,6 @@ app.get('*', (req,res) => {
     res.send("404 Error brother , Try the right url");
 })
 
-app.listen(3000, () => {
-    console.log("Listenting at port 3000");
+app.listen(port, () => {
+    console.log("Listenting at port " + port);
 })
