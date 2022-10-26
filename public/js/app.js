@@ -65,7 +65,7 @@ weatherForm.addEventListener('submit', (e) =>{
                 }
                 const main = document.querySelector(".main");
                 console.log(tempStr);
-                main.style.backgroundImage = "url('/img/"+tempStr+".jpg')";
+                main.style.backgroundImage = "url('../img/"+tempStr+".jpg')";
                 const mainh = document.querySelector(".second .details");
                 if(tempStr === "Overcast"){
                     mainh.setAttribute('style','color:white !important;');
